@@ -40,7 +40,7 @@ define( 'WC_ACF_URL', plugin_dir_url ( __FILE__ ) );
 define( 'WC_ACF_DIR', plugin_dir_path( __FILE__ ) );
 
 // Function for easy load files
-function _bea_acf_load_files($dir, $files, $prefix = '') {
+function _wc_acf_load_files($dir, $files, $prefix = '') {
 	foreach ($files as $file) {
 		if ( is_file($dir . $prefix . $file . ".php") ) {
 			require_once($dir . $prefix . $file . ".php");
@@ -49,15 +49,15 @@ function _bea_acf_load_files($dir, $files, $prefix = '') {
 }
 
 // Plugin client classes
-_bea_acf_load_files( WC_ACF_DIR . 'classes/', array( 'main' ) );
+_wc_acf_load_files( WC_ACF_DIR . 'classes/', array( 'main' ) );
 
 // Plugin admin classes
 if ( is_admin() ) {
-	_bea_acf_load_files( WC_ACF_DIR . 'classes/admin/', array( 'main', 'page' ) );
+	_wc_acf_load_files( WC_ACF_DIR . 'classes/admin/', array( 'main', 'page' ) );
 }
 
-add_action( 'plugins_loaded', 'init_bea_acf_plugin' );
-function init_bea_acf_plugin() {
+add_action( 'plugins_loaded', 'init_wc_acf_plugin' );
+function init_wc_acf_plugin() {
 	// Client
 	new WC_ACF_Main();
 
