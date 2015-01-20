@@ -1,0 +1,140 @@
+.wc-acf-message {
+	padding: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+}
+
+.wc-acf-message.success {
+	color: #468847;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+.wc-acf-message.warning {
+	color: #c09853;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+
+.wc-acf-message.error {
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.wc-acf-message.info {
+	color: #3A87AD;
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+}
+
+.wc-acf-label {
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	color: #FFF;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+}
+.wc-acf-label.info {
+	background-color: #5BC0DE;
+}
+
+.wc_acf_fields {
+	margin: 0;
+	padding: 0;
+}
+
+.wc_acf_fields table {
+	width: 100%;
+	border-spacing: 0;
+	border: 1px solid #E1E1E1;
+	border-bottom: 5px solid #E1E1E1;
+}
+
+.wc_acf_fields table:last-child {
+	border-bottom: 0 none;
+}
+
+.wc_acf_fields.widefat td, .wc_acf_fields.widefat tr, .wc_acf_fields.widefat th {
+	font-family: sans-serif;
+}
+
+.wc_acf_fields input, .wc_acf_fields textarea, .wc_acf_fields select {
+	border-color: #DFDFDF;
+}
+
+.wc_acf_fields textarea {
+	width: 100%;
+}
+
+.wc_acf_fields table tbody tr .label {
+	width: 24%;
+	vertical-align: top;
+	background: #F9F9F9;
+	border-top: 1px solid #F0F0F0;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 0;
+}
+
+.wc_acf_fields table tbody tr .label p {
+	display: block;
+	font-size: 12px;
+	padding: 0 !important;
+	margin: 3px 0 0 !important;
+	font-style: normal;
+	line-height: 16px;
+	color: #899194;
+}
+
+.wc_acf_fields table tbody tr td {
+	padding: 13px 15px;
+	border-top: 1px solid #F5F5F5;
+	border-bottom: 0 none;
+}
+
+.wc_acf_fields tbody tr .label label {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 0 3px;
+	color: #333;
+}
+
+.wc_acf_add_wrapper {
+	border-color: #DFDFDF;
+	position: relative;
+	overflow: hidden;
+	padding: 8px;
+	background: #EAF2FA;
+	border: #C7D7E2 solid 1px;
+	border-top: 0 none;
+	margin: 0;
+}
+
+.wc_acf_fields .no_fields_message {
+	padding: 15px 10px;
+	border: #DFDFDF solid 1px;
+	border: 1px solid #DFDFDF;
+	position: relative;
+	background: #FCFCFC;
+}
+
+.wc_acf_fields.fields .no_fields_message {
+	display: none;
+}
+
+.wc_acf_fields .wc_acf_delete_line th {
+	border-top: 1px solid #E1E1E1;
+}
